@@ -30,10 +30,10 @@ for (i = 0;  i < links.length; i++) { //for every link, create a mouseover event
 function status1(url){ //checks the link status synchronously
     var xhr = new XMLHttpRequest();
     try {
-    xhr.open("GET", url, false);
-    xhr.send(); 
-    //console.log("status1(",url,")", xhr.status); 
-    return xhr.status;
+        xhr.open("GET", url, false);
+        xhr.send(); 
+        //console.log("status1(",url,")", xhr.status); 
+        return xhr.status;
     }
     catch (err){
         //console.log('status1 error:', url, xhr.status);
